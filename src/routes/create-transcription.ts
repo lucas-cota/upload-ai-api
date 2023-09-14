@@ -1,6 +1,7 @@
 import { FastifyInstance } from "fastify";
 import { prisma } from "../lib/prisma";
 import { z } from 'zod'
+import { createReadStream } from 'node:fs'
 
 export async function createTranscriptonRoute(app: FastifyInstance){
     app.post('/videos/:videoId/transcription', async (req) => {
@@ -23,6 +24,10 @@ export async function createTranscriptonRoute(app: FastifyInstance){
         })
 
         const videoPath = video.path
+
+        const audioReadStream = createReadStream(videoPath)
+
+        
 
         return {
             videoId,
