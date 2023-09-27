@@ -27,7 +27,7 @@ Para começar a usar a API, siga estas etapas:
 1. Clone este repositório: `git clone https://github.com/lucascota-ld/upload-ai-api.git`
 2. Navegue até o diretório do projeto: `cd upload-ai-api`
 3. Instale as dependências: `npm install`
-4. Inicie o servidor: `npm start`
+4. Inicie o servidor: `npm run dev`
 
 
 A API estará disponível em [http://localhost:3333](http://localhost:3333) para teste e integração com seu projeto.
