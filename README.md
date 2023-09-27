@@ -26,8 +26,12 @@ Para começar a usar a API, siga estas etapas:
 
 1. Clone este repositório: `git clone https://github.com/lucascota-ld/upload-ai-api.git`
 2. Navegue até o diretório do projeto: `cd upload-ai-api`
-3. Instale as dependências: `npm install`
-4. Inicie o servidor: `npm run dev`
+3. Crie seu arquivo .env com base no .env.example
+4. Instale as dependências: `npm install`
+5. Crie a estrutura de tabelas do banco de dados: `npx prisma migrate dev`
+6. Crie prompts de forma automática: `npx prisma db seed`
+7. Inicie o servidor: `npm run dev`
+8. Veja seu banco de dados de maneira interativa: `npx prisma studio`
 
 
 A API estará disponível em [http://localhost:3333](http://localhost:3333) para teste e integração com seu projeto.
