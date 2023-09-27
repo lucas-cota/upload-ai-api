@@ -7,7 +7,7 @@ async function main() {
   await prisma.prompt.create({
     data: {
       title: 'Título YouTube',
-      tempalte: `Seu papel é gerar três títulos para um vídeo do YouTube.
+      template: `Seu papel é gerar três títulos para um vídeo do YouTube.
 
 Abaixo você receberá uma transcrição desse vídeo, use essa transcrição para gerar os títulos.
 Abaixo você também receberá uma lista de títulos, use essa lista como referência para os títulos a serem gerados.
@@ -32,7 +32,7 @@ Transcrição:
   await prisma.prompt.create({
     data: {
       title: 'Descrição YouTube',
-      tempalte: `Seu papel é gerar uma descrição sucinta para um vídeo do YouTube.
+      template: `Seu papel é gerar uma descrição sucinta para um vídeo do YouTube.
   
 Abaixo você receberá uma transcrição desse vídeo, use essa transcrição para gerar a descrição.
 
